@@ -9,10 +9,10 @@ def Cuenta_Subcadenas(cadena):
     for i in cadena:
         if i == "A":
             a += 1
-            print(f'A es {a}')
+            #print(f'A es {a}')
         if i == "X":
             x += a
-            print(f'X es {x}')
+            #print(f'X es {x}')
     print(f'Total de subcadenas A..X   {x}')
 
 Cuenta_Subcadenas(cadena)
