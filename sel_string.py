@@ -1,5 +1,5 @@
 
-#Este programa cuenta las sub cadenas que comienzan con 'A' y terminan con'X'. 
+#Este programa cuenta las sub cadenas que comienzan con 'A' y terminan con'X'. Se puede mejorar siempre
 import borra_pantalla
 cadena='ADFXADAX'
 
