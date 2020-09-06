@@ -13,6 +13,6 @@ def Cuenta_Subcadenas(cadena):
         if i == "X":
             x += a
             #print(f'X es {x}')
-    print(f'Total de subcadenas A..X   {x}')
+    print(f'Total de subcadenas que comienzan con A y terminan en X es = {x}')
 
 Cuenta_Subcadenas(cadena)
