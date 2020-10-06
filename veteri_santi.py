@@ -16,33 +16,32 @@ for p in range(n):
         if datos_veterinaria[p][2]==0:
             fallece_animales=fallece_animales+1
 
+perro=0
+gato=0
+conejo=0
+otro=0
+aves=0
 
-for s in range(n):
-	if datos_veterinaria[p][0]==1:
- 		perro +=1
-		return perro
-	 else:
- 		if datos_veterinaria[p][0]==2:
-         	gato +=1
-			return gato
-     	else:
- 			if datos_veterinaria[p][0]==3:
-         	conejo +=1
-			return conejo
+for s in datos_veterinaria:
+  if s[0]==1:
+    perro +=1
+    
+  elif s[0]==2:
+    gato +=1
+    
+  else:
+    if s[0]==3:
+      conejo +=1
+    
+    elif s[0]==4:
+      aves +=1
+    
+    if s[0]==0:
+      otro +=1
 
-     			else:
- 					if datos_veterinaria[p][0]==4:
-         				ave +=1
-     					return ave
-						else:
-							if datos_veterinaria[p][0]==0:
-         					otro +=1
-							return otro 
 
 print(f'Alta de animales {alta_animales}')
 
 print(f'Animales fallecidos {fallece_animales}')
 
-#print(f'Perro {perro} Gato {gato} conejo {conejo} ave {ave} otro{otro}')
-
-print(datos_veterinaria.count(1))
+print(f'Cantidad de animales por tipo Perro {perro} Gato {gato} Conejo {conejo} Otro {otro} Aves {aves}')
