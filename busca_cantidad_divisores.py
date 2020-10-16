@@ -12,7 +12,7 @@ def divisor(k):
     return len(lista)
     
 k=1
-while k<=20:
+while k<=30:
     nlista[k]=divisor(k)
     k +=1
     
